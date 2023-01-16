@@ -1,9 +1,20 @@
 const router = require('express').Router();
-const path = require('path');
-const readData = require('../middlewares/readData');
+const {
+  createCard,
+  getCards,
+  deleteCard,
+  likeCard,
+  dislikeCard,
+} = require('../controllers/cards');
 
-const cardsPath = path.join(__dirname, '..', 'data', 'cards.json');
+router.get('/cards');
 
-router.get('/cards', readData(cardsPath, 'tarjetas', false));
+module.exports = router;
+
+router.post('/cards', createCard);
+router.get('/cards', getCards);
+router.delete('/cards/:id', deleteCard);
+router.put('/cards/:id/likes', likeCard);
+router.delete('/cards/:id/likes', dislikeCard);
 
 module.exports = router;

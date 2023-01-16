@@ -1,21 +1,24 @@
 <div id="#inicio"></div>
 
-# Alrededor de Estados Unidos - Edición Backend - Proyecto Duodécimo de Practicum por <a href="https://github.com/brularre/">Bruno Larraín</a>
+# Alrededor de Estados Unidos - Edición Backend - Proyecto Décimotercero de Practicum por <a href="https://github.com/brularre/">Bruno Larraín</a>
 
 ## Sobre el Proyecto
 
-¡Hola! Continúo mi camino por el Desarrollo Web, este es el duodécimo sprint del Bootcamp Practicum en Latinoamérica. En esta ocasión pausamos nuestra construcción con HTML, CSS y Javascript o podríamos decir el Frontend y pasamos a estudiar el Backend con Node.js y Express.
+¡Hola! Continúo mi camino por el Desarrollo Web, este es el décimotercer sprint del Bootcamp Practicum en Latinoamérica. Ahora continuamos el avance por el backend implementando una base de datos básica basada en MongoDB y Mongoose.
 
-Esta iteración es bastante sencilla, construyendo el esqueleto de Express con algunas rutas sencillas para irlo complejizando en el futuro. Por el momento usa unos archivos JSON para imitar la funcionalidad de la Base de Datos.
+En esta versión agregamos esquemas, modelos y controladores para ejecutar las rutas propuestas por el proyecto, siendo estas para buscar usuarios, actualizar los elementos del perfil, leer, agregar y borrar tarjetas, y agregar y quitar likes. Por el momento la auth se ve manejada sólo con un id escrita en el código.
 
 ## Tecnologías usadas
 
 - [Node.js](https://nodejs.org/)
 - [Express Js](https://expressjs.com/)
 - [eslint](https://eslint.org/)
+- [MongoDB](https://www.mongodb.com/)
+- [Mongoose](https://mongoosejs.com/)
 
 ## Versiones
 
+7.0 - Feat: Agrega funcionalidad de Base de Datos con MongoDB y Mongoose.
 6.0 - Feat: Pausa el desarrollo en React y por el momento construye un esqueleto en Express para el futuro.
 5.2 - Feat: Refactoriza formularios para edición de perfil, agregar tarjetas, editar el avatar y borrar tarjetas.
 5.1 - Feat: Agrega like y eliminación de cards.

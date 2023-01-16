@@ -1,10 +1,16 @@
 const router = require('express').Router();
-const path = require('path');
-const readData = require('../middlewares/readData');
+const {
+  createUser,
+  getUsers,
+  getUser,
+  updateProfile,
+  updateAvatar,
+} = require('../controllers/users');
 
-const usersPath = path.join(__dirname, '..', 'data', 'users.json');
-
-router.get('/users/', readData(usersPath, 'usuarios', false));
-router.get('/users/:id', readData(usersPath, 'usuari@', true));
+router.post('/users', createUser);
+router.get('/users/', getUsers);
+router.get('/users/:id', getUser);
+router.patch('/users/:id', updateProfile);
+router.patch('/users/:id/avatar', updateAvatar);
 
 module.exports = router;
